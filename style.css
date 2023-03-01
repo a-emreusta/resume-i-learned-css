@@ -3,26 +3,37 @@
 }
 
 #headshot img {
-  animation: out 3s;
+  animation: out 4s;
   border-radius: 100%;
-  width: 100px;
-  height: 100px;
+  width: 160px;
+  height: 160px;
   float: left;
   margin-right: 10px;
   position: absolute;
 }
 
 #headshot img:hover {
-  animation: in 3s forwards;
+  animation: in 4s forwards;
 }
 
-#name {
+header {
   float: left;
-  margin-left: 120px;
+  margin-left: 180px;
 }
 
 #contactDetails {
   float: right;
+}
+
+.section-internship {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.icon {
+  width:15px;
+  height:15px;
 }
 
 .section-title {
