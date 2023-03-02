@@ -41,6 +41,16 @@ a:hover {
   clear: both;
 }
 
+.trail {
+  /* className for the trail elements */
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  background: teal;
+}
+
+
 #headshot img {
   animation: out 5s;
   border-radius: 100%;
