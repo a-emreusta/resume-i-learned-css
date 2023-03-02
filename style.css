@@ -4,7 +4,7 @@ body {
   font-weight: 400;
   max-width: 1336px;
   margin: 0 auto;
-  animation: color-change 5s infinite;
+  animation: color-change 3s infinite;
 }
 
 header {
@@ -42,7 +42,7 @@ a:hover {
 }
 
 #headshot img {
-  animation: out 4s;
+  animation: out 5s;
   border-radius: 100%;
   width: 160px;
   height: 160px;
@@ -52,7 +52,7 @@ a:hover {
 }
 
 #headshot img:hover {
-  animation: in 4s forwards;
+  animation: in 5s forwards;
 }
 
 nav ul {
@@ -77,15 +77,16 @@ section {
 }
 
 .section-internship {
-  /* display: grid; */
-  /* position: absolute; */
   color: white;
   background-color: orange;
   background-image: repeating-linear-gradient(120deg, transparent, transparent 25px, rgba(0,0,0,1) 25px, rgba(0,0,0,1) 50px);
+  font-size: xx-large;
   text-align: center;
+  text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
   padding-bottom: 20px;
   padding-top: 20px;
   width: 100%;
+  animation: blink 1s linear infinite;
 }
 
 
@@ -122,6 +123,12 @@ section {
     transform: rotate(3500deg) scale(3);
     left: 100px;
     top: 100px;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
 
