@@ -1,3 +1,42 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 1336px;
+  margin: 0 auto;
+  animation: color-change 5s infinite;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 728px;
+  min-height: 180px;
+  margin: 0 auto;
+  border-bottom: 1px solid #333;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  max-width: 728px;
+  margin: 0 auto;
+  /* margin-top: 300px; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: #777;
+}
+
 .clear {
   clear: both;
 }
@@ -8,60 +47,69 @@
   width: 160px;
   height: 160px;
   float: left;
-  margin-right: 10px;
-  position: absolute;
+  margin-right: 20px;
+  /* position: absolute; */
 }
 
 #headshot img:hover {
   animation: in 4s forwards;
 }
 
-header {
-  float: left;
-  margin-left: 180px;
+nav ul {
+/* display: flex; */
+list-style: none;
 }
 
-#contactDetails {
-  float: right;
+nav li {
+margin-right: 1em;
+}
+
+nav i {
+  margin-right: 1em;
+  color:black
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  padding: 10px;
 }
 
 .section-internship {
+  /* display: grid; */
+  /* position: absolute; */
+  color: white;
+  background-color: orange;
+  background-image: repeating-linear-gradient(120deg, transparent, transparent 25px, rgba(0,0,0,1) 25px, rgba(0,0,0,1) 50px);
   text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
+  width: 100%;
 }
 
-.icon {
-  width:15px;
-  height:15px;
-}
 
 .section-title {
+  /* position: left; */
+  flex-shrink: 0;
+  /* width: 190px; */
+  width: 30%;
   float: left;
 }
 
 .section-content {
+  /* position: right; */
+  flex-grow: 1;
+  border-left: 1px solid #333;
+  margin: 0 5px;
+  /* flex-basis: 70%; */
+  /* width: 100%; */
   float: right;
-  width: 72.5%;
 }
 
-.topLink {
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.topLink a {
-  color: #bbb;
-  text-decoration: none;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
-  -ms-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-}
-
-.topLink a:hover {
-  color: #888;
+.section-content p, h2 {
+  padding-left: 10px;
+  /* width: 100%; */
 }
 
 @keyframes in {
@@ -90,9 +138,6 @@ header {
   }
 }
 
-body {
-  animation: color-change 2s infinite;
-}
 @keyframes color-change {
   0% {
     background-color: red;
