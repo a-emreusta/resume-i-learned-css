@@ -109,15 +109,24 @@ section {
   animation: blink 1s linear infinite;
 }
 
+.section-resume-link{
+  display: flex;
+  justify-content: center;
+  text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+}
+
+.section-resume-link a {
+  color: white;
+  text-decoration: none;
+}
+
 .section-internship a {
   color: white;
   text-decoration: none;
 }
 
 .section-title {
-  /* position: left; */
   flex-shrink: 0;
-  /* width: 190px; */
   width: 30%;
   float: left;
 }
